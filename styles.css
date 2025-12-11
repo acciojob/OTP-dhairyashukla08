@@ -1,1 +1,100 @@
 /*  your css code here. If applicable */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#verification_heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#verification_subtext {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.code-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 450px; /* Adjust to match visual spacing */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code {
+    width: 60px; /* Width of each input */
+    height: 90px; /* Height of each input */
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    margin: 0 5px;
+    -moz-appearance: textfield; /* Hide arrows in Firefox */
+    appearance: none; /* Hide arrows in Chrome/Safari */
+}
+
+/* Hide number input arrows for Webkit (Chrome, Safari) */
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.code:focus {
+    border-color: #007bff; /* Highlight focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style to match the '0' placeholder appearance closely */
+.code::placeholder {
+    color: #a0a0a0;
+    opacity: 1; /* Make sure placeholder is visible */
+}
+
+/* Style for the extra note */
+.design-note {
+    font-size: 12px;
+    color: #777;
+    background-color: #ededed;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Set focus on the first input on load */
+.code-container :first-child {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
